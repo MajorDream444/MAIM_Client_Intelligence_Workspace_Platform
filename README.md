@@ -1,91 +1,93 @@
 # MAIM Client Intelligence Workspace Platform
 
-Status: Stage A - Foundation
+Status: Stage A — Foundation  
 Owner: Major Dream Williams
 
-This repository defines the reusable client workspace platform for MAIM-powered client intelligence systems.
+This repository defines the reusable, multi-client platform architecture for MAIM-powered Client Intelligence Workspaces.
 
-It is not a one-off client portal.
-
-It is the product foundation for repeatable client workspaces where strategy, journey, deliverables, knowledge vaults, reports, and AI-assisted coaching can compound across Client #001, Client #002, Client #003, and beyond.
+It is not a client portal and does not contain a specific client's brand, doctrine, content, assets, or implementation.
 
 ## Core Principle
 
 ```txt
 The platform is reusable.
-The client workspace is configurable.
-The client doctrine is preserved.
+The client instance is configurable.
+Client truth remains client-specific.
 ```
-
-Sheetal / Shakti may become Client #001, but Sheetal is not the architecture.
 
 ## Repository Role
 
-This repo owns:
+This repository owns:
 
-- client intelligence workspace architecture
-- reusable workspace lifecycle
-- dashboard and navigation specifications
-- client configuration standards
-- knowledge vault patterns
-- AI coach patterns
-- reporting patterns
-- future shared frontend shell
-- future AI and data layer contracts
+- platform architecture and lifecycle
+- multi-client and tenant-isolation contracts
+- workspace shell and navigation specifications
+- reusable module and component contracts
+- client-configuration standards
+- knowledge vault, AI guidance, and reporting patterns
+- role, permission, visibility, and audit rules
+- design-system framing and client-theme slots
+- source-of-truth and integration contracts
+- future shared frontend, AI, and data-layer implementation
 
-This repo does not own:
+This repository does not own:
 
-- MAIM Command Room landing page
-- HAMAL doctrine
-- AMA agent operating doctrine
-- Hanzo source code
-- Lux sovereignty implementation
-- Shakti-specific doctrine as generic platform copy
+- any individual client's doctrine, brand, copy, or assets
+- MAIM Command Room implementation
+- HAMAL or AMA operating doctrine
+- Hanzo or Lux source code
 - live client automations before approval
+- private client data or unpublished source material
+
+## Canonical Architecture
+
+Read [docs/client-intelligence-workspace.md](docs/client-intelligence-workspace.md) first.
+
+It defines the platform boundary, multi-client model, lifecycle, source-of-truth rules, AI boundary, brand framing, safety requirements, and Stage A exit criteria.
 
 ## Initial Build Sequence
 
 ```txt
-PR #1 - Platform Architecture
-PR #2 - Workspace Product Specification
-PR #3 - Client #001: Sheetal Workspace
-PR #4 - Frontend MVP Shell
-PR #5 - AI & Data Layer
+PR #1 — Platform Architecture
+PR #2 — Workspace Product Specification
+PR #3 — Client Configuration Contract
+PR #4 — Frontend MVP Shell
+PR #5 — AI & Data Layer
+PR #6+ — Governed Client Instances
 ```
 
-No frontend or live integrations should be added before the architecture and workspace specification are accepted.
+A named client workspace is created only after the reusable configuration contract is accepted. Client-specific work belongs in an isolated client-instance area, not in platform architecture or shared copy.
 
 ## Target Structure
 
-Future structure:
-
 ```txt
-portal/
-  app/
-  clients/
-    sheetal/
-    bali-arena/
-    hanzo/
-  packages/
-    workspace-ui/
-    knowledge-vault/
-    ai-coach/
-    reports/
-  docs/
+app/
+  platform/
+  workspaces/
+packages/
+  workspace-ui/
+  client-config/
+  knowledge-vault/
+  ai-coach/
+  reports/
+docs/
+  client-intelligence-workspace.md
+  product-specification.md
+  client-configuration-contract.md
+clients/
+  .gitkeep
 ```
 
-This structure is a target, not permission to scaffold everything at once.
+The structure is directional and does not authorize implementation during Stage A.
 
 ## Stage A Safety
 
 Stage A is documentation and architecture only.
 
-No live integrations.
-No client data migration.
-No Airtable writes.
-No Notion writes.
-No emails.
-No CRM writes.
+No frontend implementation.  
+No production deployment.  
+No live integrations or system writes.  
+No client data migration.  
+No private client assets.  
+No external messages.  
 No secrets.
-No frontend implementation yet.
-
