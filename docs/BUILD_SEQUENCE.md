@@ -1,10 +1,10 @@
 # Build Sequence
 
-Status: proposed operating sequence
+Status: canonical operating sequence
 
-This repo should grow through small pull requests, not one oversized implementation.
+This repository grows through focused pull requests. Platform contracts are accepted before client instances or integrations are implemented.
 
-## PR #1 - Platform Architecture
+## PR #1 — Platform Architecture
 
 Creates:
 
@@ -14,14 +14,16 @@ docs/client-intelligence-workspace.md
 
 Defines:
 
-- product vision
+- product boundary and vision
 - multi-client architecture
+- platform versus client-instance ownership
 - workspace lifecycle
-- shared versus client-specific ownership
-- client onboarding stages
-- Stage A safety rules
+- source-of-truth model
+- roles and visibility
+- AI and design-system boundaries
+- Stage A safety and exit criteria
 
-## PR #2 - Workspace Product Specification
+## PR #2 — Workspace Product Specification
 
 Defines:
 
@@ -29,60 +31,67 @@ Defines:
 - journey
 - deliverables
 - knowledge vault
+- meetings
+- roadmap
 - AI coach
+- payments
 - reports
-- navigation
-- UX flows
-- role boundaries
+- messages
+- navigation and UX flows
+- component and role boundaries
 
-## PR #3 - Client #001: Sheetal Workspace
+## PR #3 — Client Configuration Contract
 
-Creates the first client workspace specification.
+Defines the reusable schema required to create any governed client instance:
 
-Possible future location:
+- identity and workspace metadata
+- brand-theme token mapping
+- module enablement
+- navigation configuration
+- client-content references
+- doctrine and terminology boundaries
+- roles and visibility
+- source mappings
+- approval states
+- isolation and validation rules
 
-```txt
-portal/clients/sheetal/
-```
+No named client is part of the platform architecture.
 
-Defines:
+## PR #4 — Frontend MVP Shell
 
-- configuration
-- branding
-- content map
-- doctrine boundaries
-- initial roadmap
-- what must remain client-specific
-- what can become reusable platform behavior
-
-## PR #4 - Frontend MVP Shell
-
-Only after PR #1 through PR #3 are accepted.
+Begins only after PR #1 through PR #3 are accepted.
 
 Defines or implements:
 
-- app shell
-- shared layout
-- dashboard components
-- navigation
-- reusable client template
+- platform app shell
+- shared layout and navigation
+- reusable workspace components
+- configuration-driven theming
+- tenant-safe routing
+- approved sample fixtures containing no private client data
 
-## PR #5 - AI & Data Layer
+## PR #5 — AI & Data Layer
 
-Only after the MVP shell is approved.
+Begins only after the MVP shell and governance contracts are approved.
 
 Defines:
 
 - workspace metadata
-- vault integration
-- Airtable mappings
+- vault interfaces
+- connector mappings
 - GitHub source-of-truth synchronization
-- future agent hooks
-- dry-run boundaries
+- agent hooks and permissions
+- provenance and audit events
+- dry-run, approval, and rollback boundaries
+
+## PR #6+ — Governed Client Instances
+
+A named client workspace may be introduced only through the accepted configuration contract and in an isolated client-instance area.
+
+Client doctrine, content, brand assets, and private data must never be committed as shared platform defaults.
 
 ## Rule
 
 Do not skip from architecture to automation.
 
-The platform should prove the model before it connects live systems.
-
+The platform proves its reusable model, safety boundaries, and configuration contract before connecting live systems or introducing named clients.
