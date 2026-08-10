@@ -1,0 +1,324 @@
+# Instincts generated from https://github.com/MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+# Generated: 2026-07-16T20:22:14.090Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: MAIM_Client_Intelligence_Workspace_Platform-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# MAIM_Client_Intelligence_Workspace_Platform Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: docs
+
+## Evidence
+
+- 7 commits analyzed
+- Detected conventional commit pattern
+- Examples: docs: define canonical platform architecture, docs: make repository platform-only
+
+---
+id: MAIM_Client_Intelligence_Workspace_Platform-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# MAIM_Client_Intelligence_Workspace_Platform Commit Length
+
+## Action
+
+Keep commit messages concise (~42 characters)
+
+## Evidence
+
+- Average commit message length: 42 chars
+- Based on 7 commits
+
+---
+id: MAIM_Client_Intelligence_Workspace_Platform-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# MAIM_Client_Intelligence_Workspace_Platform Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: MAIM_Client_Intelligence_Workspace_Platform-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# MAIM_Client_Intelligence_Workspace_Platform Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: MAIM_Client_Intelligence_Workspace_Platform-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# MAIM_Client_Intelligence_Workspace_Platform Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: MAIM_Client_Intelligence_Workspace_Platform-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# MAIM_Client_Intelligence_Workspace_Platform Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: MAIM_Client_Intelligence_Workspace_Platform-workflow-update-platform-documentation
+trigger: "when doing update platform documentation"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# MAIM_Client_Intelligence_Workspace_Platform Workflow Update Platform Documentation
+
+## Action
+
+Follow the update-platform-documentation workflow:
+1. Identify documentation files referencing clients or non-platform-specific content
+2. Edit the documentation to remove or generalize client-specific references
+3. Commit changes with a message indicating the documentation update
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: docs/client-intelligence-workspace.md, README.md, docs/BUILD_SEQUENCE.md
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-file-naming
+trigger: "When creating or renaming a file in the codebase"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct File Naming
+
+## Action
+
+Use snake_case for file names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory, not mixed with source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-git-commit-format
+trigger: "When making a git commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct Git Commit Format
+
+## Action
+
+Format commit messages using the conventional commit style, with a prefix such as 'docs:'
+
+## Evidence
+
+- Seen in commit: 'docs: define canonical platform architecture'
+- Pattern in commits.prefixes
+
+---
+id: maim_client_intelligence_workspace_platform-instinct-update-platform-docs
+trigger: "When documentation needs to be updated to align with platform-only or client-agnostic policies"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: MajorDream444/MAIM_Client_Intelligence_Workspace_Platform
+---
+
+# Maim_client_intelligence_workspace_platform Instinct Update Platform Docs
+
+## Action
+
+Identify documentation files referencing clients or non-platform-specific content, edit to remove or generalize client-specific references, and commit changes with a message indicating the documentation update
+
+## Evidence
+
+- Workflow: update-platform-documentation
+- Seen in commits: 'docs: make repository platform-only', 'docs: remove named client from platform architecture'
+
