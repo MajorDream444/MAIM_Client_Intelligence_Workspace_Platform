@@ -65,3 +65,10 @@ Exception expiry (if any):
 ## Definition of done for coding agents
 
 Codex, Claude Code, and other coding agents must treat this gate as part of the task. They must not claim completion when any applicable item lacks evidence. “Not applicable” requires a written reason.
+
+## 2026-10-18 workspace strategy and skills update — scoped review
+Owner: Major Dream Williams (product decision); author: Codex. Scope: documentation and instructional skill files only; no runtime changes.
+- Tests: four SKILL.md packages pass quick_validate.py. Synthetic forward test verified 60/40 provisional allocation, 50/50 after an additional payment, disputed-entry exclusion, design-defect classification and new-feature change control. No application tests or CI run claimed; runtime behavior is unchanged.
+- Observability: not applicable to this documentation-only patch; no executing production paths or telemetry added. Runtime logging/alerting remains a proposed release gate, not certified complete.
+- Data/PII: input was current repo documentation, user instructions and a supplied handbook sample. Outputs are abstract strategy, fictional templates and skills stored in GitHub. No sponsor originals, credentials, real contributor ledger or handbook PDF copied. No live data migration, model integration or new retention processor.
+- Decision: documentation ready for review only. Commercial product release remains BLOCKED pending pilot and production gates in docs/workspace-product-family-2026-10-18.md. Existing unchecked runtime controls above remain unchanged.

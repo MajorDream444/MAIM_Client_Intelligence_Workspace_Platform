@@ -1,0 +1,4 @@
+interface:
+  display_name: "Founder Contribution Lab"
+  short_description: "Teach evidence-based founder contribution tracking."
+  default_prompt: "Use $maim-founder-contribution-lab to structure this workspace task with evidence and clear next actions."

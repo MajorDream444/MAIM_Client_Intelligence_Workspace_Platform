@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Delivery Control"
+  short_description: "Track scope, acceptance, revisions and changes."
+  default_prompt: "Use $ama-client-delivery-control to structure this workspace task with evidence and clear next actions."
