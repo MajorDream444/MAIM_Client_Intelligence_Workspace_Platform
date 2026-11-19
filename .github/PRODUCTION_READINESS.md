@@ -72,3 +72,12 @@ Owner: Major Dream Williams (product decision); author: Codex. Scope: documentat
 - Observability: not applicable to this documentation-only patch; no executing production paths or telemetry added. Runtime logging/alerting remains a proposed release gate, not certified complete.
 - Data/PII: input was current repo documentation, user instructions and a supplied handbook sample. Outputs are abstract strategy, fictional templates and skills stored in GitHub. No sponsor originals, credentials, real contributor ledger or handbook PDF copied. No live data migration, model integration or new retention processor.
 - Decision: documentation ready for review only. Commercial product release remains BLOCKED pending pilot and production gates in docs/workspace-product-family-2026-10-18.md. Existing unchecked runtime controls above remain unchanged.
+
+
+## 2026-11-19 Hanzo README badge — scoped evidence
+
+Scope: README-only external badge and repository-specific editor link; no application code or deployment configuration changed.
+- Tests: badge Markdown and encoded repository target checked; existing README preserved. Runtime, failure-path and E2E tests are not applicable because executable behavior is unchanged.
+- Observability: Git commit records this documentation change. New production logs, metrics and alerts are not applicable; no production path added.
+- Data/PII: public badge SVG is served through GitHub image handling. Clicking the editor link sends the public repository URL to Hanzo; no credentials, customer data, API calls, authorization changes or automated import added. Any later workspace creation requires the visitor's action and Hanzo account policies.
+- Decision: documentation-only update; this does not certify or change product production readiness, deployment or commercial approval.
